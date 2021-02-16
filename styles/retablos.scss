@@ -1,0 +1,139 @@
+.retablos {
+  position: relative;
+  z-index: 300;
+
+  .background {
+    position: absolute;
+    width: 100%;
+
+    .border {
+      position: absolute;
+      width: 100%;
+    }
+
+    .border-2 {
+      position: absolute;
+      width: 100%;
+      top: 2rem;
+      left: -1.25rem;
+    }
+
+    .lace {
+      position: absolute;
+      top: -5rem;
+      z-index: 302;
+    }
+
+    .fringe {
+      position: absolute;
+      top: 10px;
+      transform: rotate(180deg) scale(1.1);
+      height: 200px;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      overflow: visible;
+      z-index: 305;
+    }
+
+    .sky-paper {
+      position: absolute;
+      width: 100%;
+      transform: scale(1.1);
+    }
+  }
+
+  .content {
+    position: relative;
+    padding: 5rem;
+    padding-right: 0;
+    margin-right: -10rem;
+    padding-top: 250px;
+    z-index: 350;
+
+    .title {
+      .white-paper {
+        background-image: url("assets/white-paper-3.png");
+        padding: 0.5rem 2rem 0.5rem;
+      }
+
+      .base-paper {
+        background-image: url("assets/paper-3-light-green.png");
+        padding: 0.5rem 1.5rem;
+      }
+
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    .left {
+      width: 40%;
+    }
+
+    .right {
+      float: right;
+      width: 60%;
+      margin-top: -10rem;
+    }
+
+    .retablo {
+      height: 8.5rem;
+      transition: height 0.5s ease-in-out;
+      width: 80%;
+
+      .base-paper {
+        position: absolute;
+        margin-left: -7rem;
+        margin-top: -3rem;
+        width: 100%;
+      }
+
+      .head {
+        position: relative;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+
+      .info {
+        padding-top: 1.5rem;
+        position: relative;
+      }
+
+      .name {
+        background-image: url("assets/white-paper-4.png");
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .form {
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        background-image: url("assets/white-paper-3.png");
+        font-size: 1.25rem;
+        padding: 0.25rem 1rem;
+        text-transform: uppercase;
+      }
+
+      .notes {
+        min-width: 20rem;
+        max-width: 25rem;
+        padding: 1rem 2rem;
+        display: inline-block;
+        font-size: 1.25rem;
+        background-image: url("assets/white-paper-5.png");
+      }
+
+      .cta {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.5rem;
+        float: right;
+        background-image: url("assets/white-paper-5.png");
+      }
+    }
+
+    .retablo:hover {
+      height: 15rem;
+    }
+  }
+}

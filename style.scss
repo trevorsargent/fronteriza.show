@@ -1,0 +1,55 @@
+@import "node_modules/reset-css/sass/reset";
+
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
+
+/* Color Theme Swatches in Hex */
+$color-blue: #0597f2;
+$color-dark-green: #087019;
+$color-light-green: #c2d62b;
+$color-yellow: #f2cb05;
+$color-gold: #f28705;
+$color-red: #d90416;
+$color-hot-pink: #f20587;
+$color-purple: #9130f2;
+
+body {
+  font-family: "Long Cang";
+  overflow-x: hidden;
+}
+
+.paper {
+  display: inline-block;
+  background-size: 100% 100%;
+  background-clip: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paper {
+  -webkit-filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.3));
+}
+
+.src-marigolds {
+  display: none;
+}
+
+.marigolds {
+  position: relative;
+  z-index: 999;
+  white-space: nowrap;
+  img {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+    margin-top: -25px;
+    object-fit: cover;
+    -webkit-filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@import "./styles/hero.scss";
+@import "./styles/about.scss";
+@import "./styles/retablos.scss";

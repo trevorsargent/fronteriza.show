@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  z-index: 100;
+  margin-bottom: -20rem;
+  height: 50rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #sky {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #hill {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10vw 10vw;
+    transform: rotate(-5deg);
+  }
+
+  .title {
+    .white-paper {
+      background-image: url("assets/white-paper-1.png");
+      padding: 0rem 2rem 0.5rem;
+    }
+
+    .base-paper {
+      background-image: url("assets/paper-1-purple.png");
+      padding: 1rem 2rem;
+    }
+
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: $color-gold;
+    text-shadow: 1px 0 2px darken($color-red, 3);
+  }
+
+  .subtitle {
+    position: relative;
+    top: -2rem;
+    left: 10rem;
+
+    .white-paper {
+      background-image: url("assets/white-paper-1.png");
+      padding: 0.5rem 1rem;
+    }
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-dark-green;
+  }
+}
