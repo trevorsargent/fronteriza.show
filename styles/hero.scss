@@ -62,4 +62,28 @@
     text-transform: uppercase;
     color: $color-dark-green;
   }
+
+
+  .menu{
+
+    position: absolute;
+    right: -2rem;
+    top: 15rem;
+
+    font-size: 1.25rem;
+
+    li{
+      margin: .5rem;
+    }
+
+    .base-paper {
+      background-image: url("assets/paper-2-blue.png");
+      padding: 1rem;
+    }
+    
+    .white-paper{
+      background-image: url("assets/white-paper-6.png");
+      padding: 1rem 1.5rem;
+    }
+  }
 }

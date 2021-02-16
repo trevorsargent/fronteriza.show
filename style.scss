@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin-right: -20px;
+
+  color: rgb(0, 0, 100);
+}
+
 /* Color Theme Swatches in Hex */
 $color-blue: #0597f2;
 $color-dark-green: #087019;
@@ -25,7 +35,7 @@ body {
   background-position: center;
 }
 
-.paper {
+.paper, .image-shadow {
   -webkit-filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(1px 0.5px 3px rgba(0, 0, 0, 0.3));
 }
