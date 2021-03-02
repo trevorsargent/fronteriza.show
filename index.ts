@@ -1,4 +1,3 @@
-
 const marigoldBorderTop = document.getElementsByClassName("marigolds");
 const sourceMarigolds = document.getElementsByClassName("src-marigold");
 
@@ -21,16 +20,44 @@ for (let div of marigoldBorderTop) {
   }
 }
 
-const slides: any  = document.getElementsByClassName('slide')
-const captions: any = document.getElementsByClassName('caption-slide')
+const slides: any = document.getElementsByClassName("slide");
+const captions: any = document.getElementsByClassName("caption-slide");
 
 let index = 0;
 
 setInterval(() => {
-  (captions.item(index) as ElementCSSInlineStyle).style.opacity = '0';
-  (slides.item(index) as ElementCSSInlineStyle).style.opacity = '0';
-  index = (index+1) % slides.length;
-  (slides.item(index) as ElementCSSInlineStyle).style.opacity = '1';
-  (captions.item(index) as ElementCSSInlineStyle).style.opacity = '1'
-}, 5000)
+  (captions.item(index) as ElementCSSInlineStyle).style.opacity = "0";
+  (slides.item(index) as ElementCSSInlineStyle).style.opacity = "0";
+  index = (index + 1) % slides.length;
+  (slides.item(index) as ElementCSSInlineStyle).style.opacity = "1";
+  (captions.item(index) as ElementCSSInlineStyle).style.opacity = "1";
+}, 5000);
 
+Array.from(document.getElementsByClassName("flexi")).forEach((el) => {
+  el.addEventListener("mouseover", () => {
+    openRetabloById(el.id);
+    // el.classList.add('active')
+  });
+
+  el.addEventListener("mouseout", () => {
+    openRetabloById(null);
+    // el.classList.remove('active')
+  });
+});
+
+Array.from(document.getElementsByClassName("retablo-link")).forEach((el) => {
+  el.addEventListener("click", () => {
+    openRetabloById(
+      (el as HTMLAnchorElement).href.split("/").slice(-1).pop().replace("#", "")
+    );
+  });
+});
+
+function openRetabloById(id: string) {
+  Array.from(document.getElementsByClassName("flexi")).forEach((el) => {
+    el.classList.remove("active");
+  });
+
+  document.getElementById(id)?.classList.add("active");
+  return true;
+}

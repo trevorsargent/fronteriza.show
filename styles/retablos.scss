@@ -1,6 +1,7 @@
 .retablos {
   position: relative;
   z-index: 300;
+  margin-bottom: -10rem;
 
   .background {
     position: absolute;
@@ -50,7 +51,7 @@
     padding: 5rem;
     padding-right: 2.5rem;
     padding-bottom: 0;
-    padding-top: 25rem;
+    padding-top: 20rem;
     z-index: 350;
 
     .title {
@@ -64,7 +65,6 @@
         padding: 0.5rem 1.5rem;
       }
 
-      font-size: 2.5rem;
       text-transform: uppercase;
     }
 
@@ -74,7 +74,7 @@
     }
 
     .col {
-      height: 44rem;
+      height: 48rem;
     }
 
     .left {
@@ -119,12 +119,9 @@
 
       .caption {
         position: absolute;
-        bottom:0;
+        bottom: 0;
 
         transform: rotate(5deg);
-
-        font-size: 1.25rem;
-
 
         .white-paper {
           background-image: url("assets/white-paper-4.png");
@@ -160,45 +157,73 @@
       }
 
       .info {
-        padding-top: 1.5rem;
         position: relative;
+        padding-top: 0.5rem;
       }
 
       .name {
         background-image: url("assets/white-paper-4.png");
-        font-size: 2rem;
         padding: 0.5rem 1rem;
       }
 
       .form {
         position: absolute;
-        top: -1rem;
-        left: -1rem;
+        top: 3rem;
+        left: 4rem;
         background-image: url("assets/white-paper-3.png");
-        font-size: 1.25rem;
         padding: 0.25rem 1rem;
         text-transform: uppercase;
       }
 
       .notes {
         min-width: 20rem;
-        max-width: 25rem;
         padding: 1rem 2rem;
         display: inline-block;
-        font-size: 1.25rem;
-        background-image: url("assets/white-paper-5.png");
+        background-image: url("assets/white-paper-6.png");
+
+        &.podcast {
+          display: grid;
+
+          h3 {
+            grid-column: 1 / -1;
+          }
+          grid-gap: 1rem;
+          grid-template-columns: 1fr 1fr;
+
+          ul {
+            white-space: nowrap;
+          }
+        }
       }
 
       .cta {
         padding: 0.75rem 1rem;
-        font-size: 1.5rem;
         float: right;
         background-image: url("assets/white-paper-5.png");
       }
     }
 
-    .retablo:not(.static):hover {
-      height: 17rem;
+    #podcast {
+      height: 32rem;
+    }
+
+    #shadow-play {
+      height: 15rem;
+    }
+
+    #concept-album {
+      height: 15rem;
+    }
+
+    #stop-motion {
+      height: 18rem;
+    }
+
+    #event {
+      height: 15rem;
+    }
+    .flexi:not(.active) {
+      height: 9rem !important;
     }
   }
 
@@ -211,26 +236,6 @@
 
     .felt {
       width: 100%;
-      position: absolute;
-    }
-
-    .foot{
-      
-      max-width: 30%;
-      margin-top: 13rem;
-      font-size: 1.25rem;
-
-
-      .base-paper{
-        background-image: url("assets/paper-3-gold.png");
-        padding: 1rem;
-      }
-      .white-paper{
-        padding: 1rem;
-        background-image: url("assets/white-paper-6.png");
-      }
-
-     
     }
   }
 }

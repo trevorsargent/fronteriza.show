@@ -1,8 +1,9 @@
 .about {
   position: relative;
+  padding-top: 2rem;
+  overflow: hidden;
   width: 100%;
-  z-index: 200;
-
+  z-index: 500;
 
   .background {
     position: absolute;
@@ -42,6 +43,10 @@
     padding: 15rem 5rem 10rem;
 
     .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
       .white-paper {
         background-image: url("assets/white-paper-2.png");
         padding: 0.5rem 2rem 0.5rem;
@@ -51,15 +56,15 @@
         background-image: url("assets/paper-3-green.png");
         padding: 0.5rem 1.5rem;
       }
-      font-size: 2.5rem;
       text-transform: uppercase;
     }
 
     .blocks {
       margin-top: 25px;
-      display: grid;
-      grid-template-columns: 1fr 1.2fr 1fr;
-      width: 100%;
+      width: 75%;
+
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .block {
@@ -68,10 +73,33 @@
       }
 
       .white-paper {
-        padding: 1rem 2rem 2rem;
+        padding: 2rem 3rem 2rem;
       }
       font-size: 1.5rem;
       letter-spacing: -0.5px;
+    }
+
+    .block-text {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      grid-gap: 1rem;
+
+      p {
+        grid-column: 1 / -1;
+
+        &.en {
+          grid-column: 1 / 2;
+        }
+
+        &.sp {
+          grid-column: 2 / 3;
+        }
+      }
+
+      h3 {
+        grid-column: 1 / -1;
+      }
     }
 
     .block-1 {
@@ -101,6 +129,36 @@
       .base-paper {
         background-image: url("assets/paper-3-green.png");
       }
+    }
+
+    .block-4 {
+      .white-paper {
+        background-image: url("assets/white-paper-6.png");
+      }
+
+      .base-paper {
+        background-image: url("assets/paper-3-yellow.png");
+      }
+    }
+
+    .block-5 {
+      .white-paper {
+        background-image: url("assets/white-paper-6.png");
+      }
+
+      .base-paper {
+        background-image: url("assets/paper-2-blue.png");
+      }
+    }
+  }
+
+  .felt-frame {
+    margin-top: -10rem;
+    margin-bottom: -0.5rem;
+    position: relative;
+    z-index: 900;
+    img {
+      width: 100%;
     }
   }
 }
