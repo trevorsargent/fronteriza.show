@@ -32,15 +32,19 @@
 
     .blanket {
       position: absolute;
+      object-fit: cover;
       width: 130%;
+      height: 100%;
       top: 50px;
     }
   }
 
   .content {
     position: relative;
-
     padding: 15rem 5rem 10rem;
+    @media (max-width: 1000px) {
+      padding: 10rem 2rem 3rem;
+    }
 
     .title {
       display: flex;
@@ -48,12 +52,12 @@
       justify-content: center;
 
       .white-paper {
-        background-image: url("assets/white-paper-2.png");
+        background-image: url("assets/paper-label-white-1.png");
         padding: 0.5rem 2rem 0.5rem;
       }
 
       .base-paper {
-        background-image: url("assets/paper-3-green.png");
+        background-image: url("assets/paper-block-green.png");
         padding: 0.5rem 1.5rem;
       }
       text-transform: uppercase;
@@ -61,7 +65,10 @@
 
     .blocks {
       margin-top: 25px;
-      width: 75%;
+
+      @media (min-width: 1000px) {
+        width: 75%;
+      }
 
       margin-left: auto;
       margin-right: auto;
@@ -81,19 +88,24 @@
 
     .block-text {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+
+      @media (min-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       grid-gap: 1rem;
 
       p {
         grid-column: 1 / -1;
 
-        &.en {
-          grid-column: 1 / 2;
-        }
+        @media (min-width: 1000px) {
+          &.en {
+            grid-column: 1 / 2;
+          }
 
-        &.sp {
-          grid-column: 2 / 3;
+          &.sp {
+            grid-column: 2 / 3;
+          }
         }
       }
 
@@ -104,56 +116,58 @@
 
     .block-1 {
       .white-paper {
-        background-image: url("assets/white-paper-6.png");
+        background-image: url("assets/paper-block-white-1.png");
       }
 
       .base-paper {
-        background-image: url("assets/paper-2-blue.png");
+        background-image: url("assets/paper-block-blue.png");
       }
     }
 
     .block-2 {
       .white-paper {
-        background-image: url("assets/white-paper-6.png");
+        background-image: url("assets/paper-block-white-1.png");
       }
 
       .base-paper {
-        background-image: url("assets/paper-1-gold.png");
+        background-image: url("assets/paper-block-gold.png");
       }
     }
     .block-3 {
       .white-paper {
-        background-image: url("assets/white-paper-6.png");
+        background-image: url("assets/paper-block-white-1.png");
       }
 
       .base-paper {
-        background-image: url("assets/paper-3-green.png");
+        background-image: url("assets/paper-block-green.png");
       }
     }
 
     .block-4 {
       .white-paper {
-        background-image: url("assets/white-paper-6.png");
+        background-image: url("assets/paper-block-white-1.png");
       }
 
       .base-paper {
-        background-image: url("assets/paper-3-yellow.png");
+        background-image: url("assets/paper-block-yellow.png");
       }
     }
 
     .block-5 {
       .white-paper {
-        background-image: url("assets/white-paper-6.png");
+        background-image: url("assets/paper-block-white-1.png");
       }
 
       .base-paper {
-        background-image: url("assets/paper-2-blue.png");
+        background-image: url("assets/paper-block-blue.png");
       }
     }
   }
 
   .felt-frame {
-    margin-top: -10rem;
+    @media (min-width: 1000px) {
+      margin-top: -10rem;
+    }
     margin-bottom: -0.5rem;
     position: relative;
     z-index: 900;
