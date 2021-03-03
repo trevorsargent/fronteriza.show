@@ -5,18 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx parcel index.html",
-    "build": "npx parcel build index.html"
+    "dev": "npx parcel@next index.html",
+    "build": "npx parcel@next build index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^3.2.1",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.2",
-    "parcel-plugin-html-partials": "0.0.6",
+    "@babel/core": "^7.13.8",
     "sass": "^1.32.7",
     "typescript": "^4.1.5"
   }
