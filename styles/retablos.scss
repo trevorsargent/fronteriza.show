@@ -247,6 +247,18 @@
         }
       }
 
+      .epi {
+        margin-top: 0.5rem;
+        margin-bottom: -0.25rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 13rem);
+
+        a h4 {
+          display: inline;
+        }
+      }
+
       @media (min-width: 1000px) {
         .cta {
           float: right;
@@ -267,7 +279,7 @@
 
     @media (min-width: 1000px) {
       #podcast {
-        height: 33rem;
+        height: 34rem;
       }
 
       #shadow-play {
