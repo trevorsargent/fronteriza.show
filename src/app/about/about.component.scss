@@ -1,0 +1,36 @@
+.content {
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.block {
+  width: 50%;
+}
+
+.title {
+  top: 5rem;
+  left: 10rem;
+
+  .content {
+    padding: 1rem 2rem;
+  }
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+
+  p {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .en {
+    grid-column: 1 /2;
+  }
+
+  .sp {
+    grid-column: 2 /3;
+  }
+}
