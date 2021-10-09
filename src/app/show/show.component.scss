@@ -1,15 +1,16 @@
 .show {
-  margin-top: -3rem;
   position: relative;
+  margin-top: -4rem;
   background-image: url("../../assets/blue-sky-with-clouds.png");
   background-size: 110% 100%;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh + 8rem);
   z-index: 998;
 }
 
 .content {
   padding: 5rem;
+  padding-top: 7rem;
   position: relative;
 }
 

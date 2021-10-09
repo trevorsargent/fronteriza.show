@@ -12,7 +12,9 @@ import { CardComponent } from './card/card.component';
 import { LabelComponent } from './label/label.component';
 import { ShowComponent } from './show/show.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-
+import { MainComponent } from './main/main.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +27,13 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
     CardComponent,
     LabelComponent,
     ShowComponent,
+    MainComponent,
   ],
-  imports: [BrowserModule, PerfectScrollbarModule],
+  imports: [
+    BrowserModule,
+    PerfectScrollbarModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
