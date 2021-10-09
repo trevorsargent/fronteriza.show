@@ -10,10 +10,16 @@
 
 .content {
   padding: 5rem;
+  position: relative;
 }
 
 .title {
+ width: 26rem;
   .content {
     padding: 1rem 2rem;
   }
+}
+
+app-label {
+  display: block;
 }

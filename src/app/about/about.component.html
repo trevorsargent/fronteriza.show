@@ -2,11 +2,26 @@
   <div class="content">
     <app-label class="title">
       <div class="content">
-        <h1>About the Show</h1>
+        <h1>Bienvenidos a Fronteriza!!</h1>
       </div>
     </app-label>
 
-    <div class="block">
+    <div class="hero" (click)="onClick(0)">
+      <app-card [randomPaper]="false">
+        <div class="marigold-content">
+          <img src="../../assets/marigold-group.png" alt="" />
+        </div>
+      </app-card>
+    </div>
+
+    <div
+      class="block"
+      (click)="onClick(1)"
+      [class.isTurned]="isTurned(1)"
+      [style.z-index]="505"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1"
+    >
       <app-card>
         <div class="card-content">
           <p>We’re glad you’re here. Me alegro tanto !</p>
@@ -29,10 +44,22 @@
             Para escuchar<br />
           </p>
           <p>Una nepantla for reckoning</p>
+
+          <div class="page-1-deco">
+            <img class="marigold" src="../../assets/marigold-2.png" alt="" />
+          </div>
         </div>
       </app-card>
     </div>
-    <div class="block">
+    <div
+      class="block"
+      (click)="onClick(2)"
+      [class.isTurned]="isTurned(2)"
+      [style.margin-left.rem]="0"
+      [style.z-index]="504"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1.5"
+    >
       <app-card>
         <div class="card-content">
           <p>
@@ -60,7 +87,14 @@
         </div>
       </app-card>
     </div>
-    <div class="block">
+    <div
+      class="block"
+      (click)="onClick(3)"
+      [class.isTurned]="isTurned(3)"
+      [style.z-index]="503"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="0.5"
+    >
       <app-card>
         <div class="card-content">
           <p class="en">
@@ -84,10 +118,21 @@
             una enlace o te ofrecemos una dirección para juntar en este ciudad
             linda.
           </p>
+
+          <div class="page-3-deco">
+            <img class="extra-mari" src="../../assets/marigold-4.png" alt="" />
+          </div>
         </div>
       </app-card>
     </div>
-    <div class="block">
+    <div
+      class="block"
+      (click)="onClick(4)"
+      [class.isTurned]="isTurned(4)"
+      [style.z-index]="502"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1"
+    >
       <app-card>
         <div class="card-content">
           <p>Fronteriza offers a series of events/offerings/retablos.</p>
@@ -114,7 +159,7 @@
         </div>
       </app-card>
     </div>
-    <div class="block">
+    <div class="block" [style.z-index]="501" [style.margin-left.rem]="2">
       <app-card>
         <div class="card-content">
           <p>So here we are. Aqui estamos.</p>

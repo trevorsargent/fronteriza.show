@@ -1,5 +1,30 @@
 .card {
+
   position: relative;
-  background-size: 100% 100%;
-  background-image: url("../../assets/paper-block-white-2.png");
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image: url('../../assets//paper-block-white-1.png');
+    margin-bottom: -100%;
+    z-index: -1;
+  }
+
+
+}
+
+
+.flip{
+  &::before {
+    transform: rotate(45);
+  }
+}
+
+.paper2{
+  &::before{
+    background-image: url("../../assets/paper-block-white-2.png");
+  }
 }

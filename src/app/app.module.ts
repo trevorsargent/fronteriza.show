@@ -11,6 +11,7 @@ import { EventComponent } from './event/event.component';
 import { CardComponent } from './card/card.component';
 import { LabelComponent } from './label/label.component';
 import { ShowComponent } from './show/show.component';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,10 @@ import { ShowComponent } from './show/show.component';
     EventComponent,
     CardComponent,
     LabelComponent,
-    ShowComponent
+    ShowComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, PerfectScrollbarModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
