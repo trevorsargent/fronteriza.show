@@ -11,10 +11,13 @@ import { EventComponent } from './event/event.component';
 import { CardComponent } from './card/card.component';
 import { LabelComponent } from './label/label.component';
 import { ShowComponent } from './show/show.component';
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { MainComponent } from './main/main.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes';
+import { OffcutsComponent } from './watch/offcuts/offcuts.component';
+import { RecordingComponent } from './watch/recording/recording.component';
+import { ShadowsComponent } from './watch/shadows/shadows.component';
+import { WatchComponent } from './watch/watch.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,12 +31,12 @@ import { routes } from './routes';
     LabelComponent,
     ShowComponent,
     MainComponent,
+    WatchComponent,
+    ShadowsComponent,
+    RecordingComponent,
+    OffcutsComponent,
   ],
-  imports: [
-    BrowserModule,
-    PerfectScrollbarModule,
-    RouterModule.forRoot(routes),
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })
