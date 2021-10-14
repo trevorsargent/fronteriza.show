@@ -11,10 +11,11 @@ export const routes: Routes = [
     path: 'watch',
     component: WatchComponent,
     children: [
-      { path: '', redirectTo: 'show' },
       { path: 'show', component: RecordingComponent },
-      { path: 'offcuts', component: OffcutsComponent },
       { path: 'shadows', component: ShadowsComponent },
+      { path: 'offcuts', component: OffcutsComponent },
+      { path: '', redirectTo: 'show', pathMatch: 'full', },
     ],
   },
+  {path: '**', redirectTo: ''}
 ];

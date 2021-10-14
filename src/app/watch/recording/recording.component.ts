@@ -9,7 +9,15 @@ export class RecordingComponent implements OnInit {
 
   constructor() { }
 
+  passwordHash = 'marina'
+
+  isAuth = true
+
   ngOnInit(): void {
+  
+  
   }
+
+
 
 }
