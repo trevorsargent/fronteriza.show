@@ -20,7 +20,7 @@ main {
   left: 10rem;
 
   .content {
-    padding: 1rem 2rem;
+    padding: 0 1rem;
   }
 
   h1 {
@@ -32,26 +32,24 @@ main {
 
 .tag {
   position: absolute;
-  top: 9rem;
+  top: 8.5rem;
   left: 8rem;
   z-index: 800;
 
   .content {
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
     color: #d90416;
   }
 }
 
 .subtitle {
   position: absolute;
-  top: 16rem;
+  top: 15.5rem;
   left: 16rem;
 
   .content {
     text-transform: uppercase;
     color: $color-dark-green;
-    padding: 0.5rem 1rem;
   }
 }
 

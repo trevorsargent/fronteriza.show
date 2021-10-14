@@ -17,7 +17,6 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.flip = Math.random() > 0.5;
-
     this.paper2 = Math.random() > 0.5 && this.randomPaper;
   }
 
