@@ -18,7 +18,6 @@ export class AboutComponent implements OnInit {
       return;
     }
     this.page = pageNum + 1;
-    console.log(this.page);
   }
 
   isTurned(num: number) {
