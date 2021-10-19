@@ -7,7 +7,6 @@ import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { PodcastComponent } from './listen/podcast/podcast.component';
 import { BorderComponent } from './border/border.component';
-import { EventComponent } from './event/event.component';
 import { CardComponent } from './card/card.component';
 import { LabelComponent } from './label/label.component';
 import { ShowComponent } from './show/show.component';
@@ -22,6 +21,7 @@ import { WatchPickerComponent } from './watch/watch-picker/watch-picker.componen
 import { AlbumComponent } from './listen/album/album.component';
 import { ListenComponent } from './listen/listen.component';
 import { ListenPickerComponent } from './listen/listen-picker/listen-picker.component';
+import { FestivalComponent } from './festival/festival.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,6 @@ import { ListenPickerComponent } from './listen/listen-picker/listen-picker.comp
     AboutComponent,
     PodcastComponent,
     BorderComponent,
-    EventComponent,
     CardComponent,
     LabelComponent,
     ShowComponent,
@@ -43,6 +42,7 @@ import { ListenPickerComponent } from './listen/listen-picker/listen-picker.comp
     AlbumComponent,
     ListenComponent,
     ListenPickerComponent,
+    FestivalComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
