@@ -1,0 +1,9 @@
+<div class="background"></div>
+
+<div class="spacer" *ngIf="!hasChild()"></div>
+
+<ng-container *ngIf="hasChild()">
+  <router-outlet></router-outlet>
+</ng-container>
+
+<app-listen-picker></app-listen-picker>

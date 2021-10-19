@@ -1,17 +1,9 @@
-@import "../../colors.scss";
+@import "../../../colors.scss";
 
 .container {
   margin: 0 auto;
   max-width: 800px;
-}
-
-.background {
-  width: 100vw;
-  background: url("../../assets/border-sunset.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3rem;
-  box-sizing: border-box;
+  position: relative;
 }
 
 .spacer {
@@ -19,14 +11,18 @@
 }
 
 .head {
-  background: url("../../assets/paper-label-purple.png");
+  background: url("../../../assets/paper-label-purple.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 30rem;
   padding: 1.5rem;
 
-  h2 {
+  h2, h4 {
     margin: 0 1rem;
+  }
+
+  h4{
+    text-transform: uppercase;
   }
 }
 
@@ -46,7 +42,7 @@
 }
 
 .ep-1 {
-  background: url("../../assets/paper-label-blue.png");
+  background: url("../../../assets/paper-label-blue.png");
   grid-column: 1 / span 3;
   $color: $color-blue;
   h3,
@@ -59,7 +55,7 @@
 }
 
 .ep-2 {
-  background: url("../../assets/paper-label-green.png");
+  background: url("../../../assets/paper-label-green.png");
   grid-column: 2 / span 3;
   $color: $color-dark-green;
   a:hover {
@@ -72,7 +68,7 @@
 }
 
 .ep-3 {
-  background: url("../../assets/paper-label-gold.png");
+  background: url("../../../assets/paper-label-gold.png");
   grid-column: 3 / span 3;
   $color: $color-gold;
   a:hover {
@@ -85,7 +81,7 @@
 }
 
 .ep-4 {
-  background: url("../../assets/paper-label-red.png");
+  background: url("../../../assets/paper-label-red.png");
   grid-column: 4 / span 3;
   $color: $color-red;
   a:hover {
@@ -134,11 +130,11 @@
   background-size: 100% 100%;
 
   &.top {
-    background-image: url("../../assets/paper-label-white-1.png");
+    background-image: url("../../../assets/paper-label-white-1.png");
   }
 
   &.credits {
-    background-image: url("../../assets/paper-block-white-2.png");
+    background-image: url("../../../assets/paper-block-white-2.png");
   }
 
   p {

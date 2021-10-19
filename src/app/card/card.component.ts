@@ -17,10 +17,12 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.flip = Math.random() > 0.5;
-    this.paper2 = Math.random() > 0.5 && this.randomPaper;
+    this.paper2 = (Math.random() > 0.5 && this.randomPaper) || this.paper2;
   }
 
   flip: boolean = false;
+
+  @Input()
   paper2 = false;
 
   @Input()

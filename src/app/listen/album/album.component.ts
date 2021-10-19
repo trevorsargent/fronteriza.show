@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-podcast',
-  templateUrl: './podcast.component.html',
-  styleUrls: ['./podcast.component.scss'],
+  selector: 'app-album',
+  templateUrl: './album.component.html',
+  styleUrls: ['./album.component.scss'],
 })
-export class PodcastComponent implements OnInit {
+export class AlbumComponent implements OnInit {
   episodes: Episode[] = [
     {
       link: 'https://soundcloud.com/ultragonic/fronteriza-podcast-episode-1',

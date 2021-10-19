@@ -1,6 +1,8 @@
 <div class="background"></div>
 
-<div class="watch-wrap">
+<div class="spacer" *ngIf="!hasChild()"></div>
+
+<div class="watch-wrap" *ngIf="hasChild()">
   <div class="wrap">
     <img src="../../assets/lace frame.png" alt="" />
 
@@ -8,11 +10,6 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-  <div class="choose">
-    <div class="container">
-      <a href="/watch/show">Full Show</a>
-      <a href="/watch/shadows">Shadow Play</a>
-      <a href="/watch/offcuts">Offcuts</a>
-    </div>
-  </div>
 </div>
+
+<app-watch-picker></app-watch-picker>

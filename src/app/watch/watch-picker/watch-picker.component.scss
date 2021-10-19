@@ -1,0 +1,65 @@
+@import '../../../colors.scss';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.title {
+  position: relative;
+  margin-bottom: 3rem;
+  background-image: url('../../../assets/paper-label-blue.png');
+  padding: 1rem 2rem;
+  background-size: 100% 100%;
+  color: $color-red;
+}
+
+
+.options {
+
+  max-width: 1000px;;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  z-index: 900;
+
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.card-contents{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.show {
+  grid-column: 3 / -3;
+
+  .card-contents {
+    padding: 2rem 2.5rem;
+  }
+}
+
+.shadows {
+  grid-column: 2 / span 5;
+}
+
+.offcuts {
+  grid-column: span 5
+}

@@ -3,10 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-watch',
-  templateUrl: './watch.component.html',
-  styleUrls: ['./watch.component.scss'],
+  templateUrl: './listen.component.html',
+  styleUrls: ['./listen.component.scss'],
 })
-export class WatchComponent implements OnInit {
+export class ListenComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {}

@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="spacer"></div>
+
+  <div class="head">
+    <app-label
+      ><h2>Conversations With my Parents</h2>
+      <h4>Podcast</h4></app-label
+    >
+  </div>
+
+  <div class="episodes">
+    <div class="info top">
+      <p>
+        A podcast and a place for PETE company member Cristi Miles to reflect on
+        conversations that she was never brave enough to have with her parents,
+        a decir lo que cuesta para expresar.
+      </p>
+      <p>To be released in 4 installments.</p>
+    </div>
+
+    <div
+      class="ep"
+      [ngClass]="'ep-' + (i + 1)"
+      *ngFor="let ep of episodes; let i = index"
+    >
+      <app-label>
+        <div class="ep-info">
+          <h3>{{ ep.title }}</h3>
+
+          <div class="links">
+            <ng-container *ngIf="ep.isReleased">
+              <a [href]="ep.link" target="blank">Listen <span>➤</span></a>
+              <a [href]="ep.transcript" target="blank">View Transcript</a>
+            </ng-container>
+            <ng-container *ngIf="!ep.isReleased">
+              <a href="#">Coming Soon!</a>
+            </ng-container>
+          </div>
+        </div>
+      </app-label>
+    </div>
+
+    <div class="info credits">
+      <h3>Podcast Credits</h3>
+
+      <div class="left">
+        <span>Cristi Miles - Producer/Host</span>
+        <span>Marina Miles - Interviewee</span>
+        <span>Rudolph Miles - Interviewee</span>
+        <span>Phillip Johnson - Producer/editor</span>
+        <span>Mark Valadez - Music</span>
+        <span>Kristina Mast - Transcription</span>
+        <span>Rebecca Lingafelter - Producer</span>
+        <span>Molly Gardner - Production Support</span>
+      </div>
+      <div class="right">
+        Special thanks to Coho Productions, Philip Cuomo, Peter Ksander, Reed
+        College, Mom, Dad, Aunt Carol, Nena, Bibi, Heather, Clint, Estella,
+        Anaïs Gurrola, and The ICP 2020-21 Cohort.
+      </div>
+    </div>
+  </div>
+</div>
