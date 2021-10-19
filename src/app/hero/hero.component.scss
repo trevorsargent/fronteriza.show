@@ -53,32 +53,60 @@ main {
   }
 }
 
-.cta-paper {
-  position: absolute;
-  bottom: 7rem;
-  right: 14rem;
-  width: 28rem;
-  height: 9.5rem;
-}
-
-.info {
+.links {
   position: absolute;
   bottom: 8rem;
-  right: 15rem;
+  right: 4rem;
 
-  .content {
-    color: $color-blue;
-    padding: 1rem;
-  }
 }
 
 .cta {
-  position: absolute;
-  bottom: 6rem;
-  right: 10rem;
+  padding: 1rem;
+  padding-bottom: .5rem;
 
-  .content {
-    color: $color-red;
-    padding: 0.5rem 1rem;
+  a {
+    span {
+      font-size: 0.8rem;
+      margin-left: 2rem;
+      // vertical-align: middle;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.watch {
+
+  .watch-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  background: url('../../assets/paper-label-green.png');
+
+  a:hover, span {
+   color: $color-dark-green;
+  }
+
+}
+
+.podcast{
+  background: url('../../assets/paper-label-blue.png');
+  a:hover, span {
+    color: $color-blue;
+   }
+}
+
+.album {
+  background: url('../../assets/paper-label-purple.png');
+  a:hover, span {
+    color: $color-purple;
+   }
+}
+
+.festival {
+  background: url('../../assets/paper-label-pink.png');
+  a:hover, span {
+    color: $color-hot-pink;
+   }
 }

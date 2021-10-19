@@ -32,5 +32,6 @@ export const routes: Routes = [
     ],
   },
   { path: 'festival', component: FestivalComponent },
+
   { path: '**', redirectTo: '' },
 ];
