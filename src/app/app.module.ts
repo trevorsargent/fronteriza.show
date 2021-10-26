@@ -22,6 +22,7 @@ import { AlbumComponent } from './listen/album/album.component';
 import { ListenComponent } from './listen/listen.component';
 import { ListenPickerComponent } from './listen/listen-picker/listen-picker.component';
 import { FestivalComponent } from './festival/festival.component';
+import { SoonComponent } from './soon/soon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { FestivalComponent } from './festival/festival.component';
     ListenComponent,
     ListenPickerComponent,
     FestivalComponent,
+    SoonComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
