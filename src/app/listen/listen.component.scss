@@ -1,0 +1,51 @@
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./../../assets/border-sunset.png");
+  background-size: cover;
+  z-index: 0;
+}
+
+.spacer {
+  height: 7rem;
+}
+
+.watch-wrap {
+  // position: absolute;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 6rem;
+  padding-bottom: 0;
+
+  .wrap {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .outlet-wrap {
+    margin-bottom: 6%;
+    margin-top: 5.7%;
+    margin-left: 5.6%;
+    margin-right: 5.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    router-outlet {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,112 @@
+@import "../../colors.scss";
+
+main {
+  height: 100vh;
+  background-image: url("../../assets/hill.png");
+  position: relative;
+}
+
+.title-paper {
+  position: absolute;
+  top: 9rem;
+  left: 9rem;
+  width: 29rem;
+  height: 9rem;
+}
+
+.title {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: $color-gold;
+    text-shadow: $color-red;
+  }
+}
+
+.tag {
+  position: absolute;
+  top: 8.5rem;
+  left: 8rem;
+  z-index: 800;
+
+  .content {
+    text-transform: uppercase;
+    color: #d90416;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  top: 15.5rem;
+  left: 16rem;
+
+  .content {
+    text-transform: uppercase;
+    color: $color-dark-green;
+  }
+}
+
+.links {
+  position: absolute;
+  bottom: 8rem;
+  right: 4rem;
+
+}
+
+.cta {
+  padding: 1rem;
+  padding-bottom: .5rem;
+
+  a {
+    span {
+      font-size: 0.8rem;
+      margin-left: 2rem;
+      // vertical-align: middle;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.watch {
+
+  .watch-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  background: url('../../assets/paper-label-green.png');
+
+  a:hover, span {
+   color: $color-dark-green;
+  }
+
+}
+
+.podcast{
+  background: url('../../assets/paper-label-blue.png');
+  a:hover, span {
+    color: $color-blue;
+   }
+}
+
+.album {
+  background: url('../../assets/paper-label-purple.png');
+  a:hover, span {
+    color: $color-purple;
+   }
+}
+
+.festival {
+  background: url('../../assets/paper-label-pink.png');
+  a:hover, span {
+    color: $color-hot-pink;
+   }
+}

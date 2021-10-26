@@ -1,0 +1,71 @@
+.hero{
+    width: 100%;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    height: 85vh;
+    overflow: hidden;
+    margin-bottom: 2rem;;
+}
+
+.background {
+    margin-top: -3rem;
+    background-image: url('../../assets/blanket.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7rem;
+
+
+
+
+    app-card {
+        max-height: 20vh;
+    }
+}
+
+
+.container{
+    position: relative;
+    z-index: 900;
+    max-width: 900px;
+    margin: 0 auto;
+
+
+}
+
+
+.card-content{
+    padding: 3rem;
+    box-sizing: border-box;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.intro {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.vendors {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    .vendor-label {
+        grid-column: 1 / -1;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}

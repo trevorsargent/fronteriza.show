@@ -1,0 +1,194 @@
+<div class="about">
+  <div class="content">
+    <app-label class="title">
+      <div class="content">
+        <h1>Bienvenidos a Fronteriza!!</h1>
+      </div>
+    </app-label>
+
+    <div class="hero" (click)="onClick(0)">
+      <app-card [randomPaper]="false">
+        <div class="marigold-content">
+          <img src="../../assets/marigold-group.png" alt="" />
+        </div>
+      </app-card>
+    </div>
+
+    <div
+      class="block"
+      (click)="onClick(1)"
+      [class.isTurned]="isTurned(1)"
+      [style.z-index]="505"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1"
+    >
+      <app-card>
+        <div class="card-content">
+          <p>We’re glad you’re here. Me alegro tanto !</p>
+          <p>Welcome to our borderland, nuestra frontera, our space between,</p>
+          <p>
+            Where what we’ve thought about, learned, and shared lives.
+            <br />
+
+            Es un lugar tan poderoso que nos hace pensar en formas diferentes,
+            aprender más, y lo más importante- compartir vidas/almas
+          </p>
+          <p class="en">
+            It is a space for offerings<br />
+            A space for witnessing<br />
+            A space for listening<br />
+          </p>
+          <p class="sp">
+            Es un espacio físico y psíquico para dar ofrendas<br />
+            para ser testigo<br />
+            Para escuchar<br />
+          </p>
+          <p>Una nepantla for reckoning</p>
+
+          <div class="page-1-deco">
+            <img class="marigold" src="../../assets/marigold-2.png" alt="" />
+          </div>
+        </div>
+      </app-card>
+    </div>
+    <div
+      class="block"
+      (click)="onClick(2)"
+      [class.isTurned]="isTurned(2)"
+      [style.margin-left.rem]="0"
+      [style.z-index]="504"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1.5"
+    >
+      <app-card>
+        <div class="card-content">
+          <p>
+            Fronteriza vive y respira en la complex personality of borders and
+            borderlands. Told en español y ingles,
+          </p>
+          <p class="en">
+            Fronteriza is about finding your home and still having an arduous
+            journey ahead.
+          </p>
+          <p class="sp">
+            Cuenta la historia de encontrar tu casa, hogar, pero todavía
+            teniendo una travesía muy dura adelante.
+          </p>
+          <p class="en">
+            It is a story of colonization, immigration, and how to heal from the
+            deep wounds inflicted by our ancestors.
+          </p>
+          <p class="sp">
+            Es una crónica que nos duele porque tiene que ver con la conquista,
+            la migración, y ese sentido que tenemos que no tiene nombre pero nos
+            sigue.
+          </p>
+          <p>It is a space where we can reconcile, only by bearing witness.</p>
+        </div>
+      </app-card>
+    </div>
+    <div
+      class="block"
+      (click)="onClick(3)"
+      [class.isTurned]="isTurned(3)"
+      [style.z-index]="503"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="0.5"
+    >
+      <app-card>
+        <div class="card-content">
+          <p class="en">
+            It is created together, with you, over time, and through many
+            iterations.
+          </p>
+          <p class="sp">
+            Es creado con heridas y curas que son ancianas pero también van a
+            durar por más tiempo que nosotras.
+          </p>
+
+          <p class="en">
+            Sometimes this space will offer a link to listen to, or a recipe
+            para cocinar, or a video para mirar, or a link to learn from.
+            Sometimes it will offer you an address to meet us somewhere in our
+            beautiful city.
+          </p>
+
+          <p class="sp">
+            Este espacio precioso es multifacético, a veces escuchas algo, o vez
+            una enlace o te ofrecemos una dirección para juntar en este ciudad
+            linda.
+          </p>
+
+          <div class="page-3-deco">
+            <img class="extra-mari" src="../../assets/marigold-4.png" alt="" />
+          </div>
+        </div>
+      </app-card>
+    </div>
+    <div
+      class="block"
+      (click)="onClick(4)"
+      [class.isTurned]="isTurned(4)"
+      [style.z-index]="502"
+      [style.margin-left.rem]="1"
+      [style.margin-top.rem]="1"
+    >
+      <app-card>
+        <div class="card-content">
+          <p>Fronteriza offers a series of events/offerings/retablos.</p>
+          <p>
+            Inspired by the retablos of Mexico, small devotional paintings,
+            often depicting one moment of divine intervention, as votive
+            offerings left where tragic events have happened,
+          </p>
+
+          <p class="en">
+            we offer our aural, visual and theatrical retablos to keep vigil, to
+            make visible those waiting in the borderlands.
+          </p>
+          <p class="sp">
+            Ofrecemos estos retablos visuales, llena de alma y teatrales para
+            recordar, lamentar, y mantener vigilia.
+          </p>
+
+          <p>
+            The offerings can be found above, all inspired by the global
+            immigration crisis, and told through the lens of Cristi’s experience
+            growing up along the US/MEXICO border.
+          </p>
+        </div>
+      </app-card>
+    </div>
+    <div class="block" [style.z-index]="501" [style.margin-left.rem]="2">
+      <app-card>
+        <div class="card-content">
+          <p>So here we are. Aqui estamos.</p>
+
+          <p>
+            So here I am. Welcome to my mind, mi familia, mi historia, mi vida
+            (life). I’m examining policies and politics. And maybe I’m spilling
+            some tea.(chisme!) Bueno, I’m learning things about myself, de mi
+            misma, y some things are things that I don’t really want to know,
+            (hijole) pero, I’m facing them anyway.
+          </p>
+
+          <p>
+            Thanks for joining me/us on this wild ride. Les agradecemos por
+            dedicar su tiempo.
+          </p>
+
+          <p>
+            We hope that you will come back once, or twice, or as often as you
+            like. (Hola, MOM!)
+          </p>
+          <p>
+            You’re about to get to know Cristi pretty well. La vulnerabilidad es
+            algo muy fuerte y bonita. We should get un cafecito! Or at least
+            correspond- enviame un email!
+            <a href="mailto:cristi@petensemble.org">cristi@petensemble.org</a>
+          </p>
+        </div>
+      </app-card>
+    </div>
+  </div>
+</div>
