@@ -57,12 +57,12 @@ main {
   position: absolute;
   bottom: 8rem;
   right: 4rem;
-
 }
 
 .cta {
   padding: 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.75rem;
+  background-size: 100% 100%;
 
   a {
     span {
@@ -77,36 +77,38 @@ main {
 }
 
 .watch {
-
   .watch-contents {
     display: flex;
     flex-direction: column;
   }
-  background: url('../../assets/paper-label-green.png');
+  background-image: url("../../assets/paper-label-green.png");
 
-  a:hover, span {
-   color: $color-dark-green;
+  a:hover,
+  span {
+    color: $color-dark-green;
   }
-
 }
 
-.podcast{
-  background: url('../../assets/paper-label-blue.png');
-  a:hover, span {
+.podcast {
+  background-image: url("../../assets/paper-label-blue.png");
+  a:hover,
+  span {
     color: $color-blue;
-   }
+  }
 }
 
 .album {
-  background: url('../../assets/paper-label-purple.png');
-  a:hover, span {
+  background-image: url("../../assets/paper-label-purple.png");
+  a:hover,
+  span {
     color: $color-purple;
-   }
+  }
 }
 
 .festival {
-  background: url('../../assets/paper-label-pink.png');
-  a:hover, span {
+  background-image: url("../../assets/paper-label-pink.png");
+  a:hover,
+  span {
     color: $color-hot-pink;
-   }
+  }
 }
