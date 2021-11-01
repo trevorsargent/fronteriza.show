@@ -24,6 +24,7 @@ import { ListenPickerComponent } from './listen/listen-picker/listen-picker.comp
 import { FestivalComponent } from './festival/festival.component';
 import { SoonComponent } from './soon/soon.component';
 import { CreditsComponent } from './credits/credits.component';
+import { MythComponent } from './watch/myth/myth.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { CreditsComponent } from './credits/credits.component';
     ShadowsComponent,
     RecordingComponent,
     OffcutsComponent,
+    MythComponent,
     WatchPickerComponent,
     AlbumComponent,
     ListenComponent,

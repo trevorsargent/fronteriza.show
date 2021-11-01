@@ -1,4 +1,4 @@
-@import '../../../colors.scss';
+@import "../../../colors.scss";
 
 .wrap {
   display: flex;
@@ -10,20 +10,17 @@
   box-sizing: border-box;
 }
 
-
 .title {
   position: relative;
   margin-bottom: 3rem;
-  background-image: url('../../../assets/paper-label-blue.png');
+  background-image: url("../../../assets/paper-label-blue.png");
   padding: 1rem 2rem;
   background-size: 100% 100%;
   color: $color-red;
 }
 
-
 .options {
-
-  max-width: 1000px;;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
@@ -34,15 +31,14 @@
   gap: 1rem;
 }
 
-.card-contents{
+.card-contents {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 1.5rem 2rem;
   box-sizing: border-box;
 
-
-  img{
+  img {
     width: 100%;
     object-fit: cover;
   }
@@ -57,9 +53,13 @@
 }
 
 .shadows {
-  grid-column: 2 / span 5;
+  grid-column: 1 / span 4;
+}
+
+.myth {
+  grid-column: 5 / span 4;
 }
 
 .offcuts {
-  grid-column: span 5
+  grid-column: 9 / span 4;
 }
