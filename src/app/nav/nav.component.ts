@@ -11,7 +11,8 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  credits() {
+  credits(e: Event) {
+    e.preventDefault();
     this.cs.show();
   }
 }
