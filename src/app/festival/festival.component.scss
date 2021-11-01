@@ -1,71 +1,103 @@
-.hero{
+@import "../../colors.scss";
+
+.hero {
+  width: 100%;
+
+  img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    height: 85vh;
-    overflow: hidden;
-    margin-bottom: 2rem;;
+  height: 65vh;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .background {
-    margin-top: -3rem;
-    background-image: url('../../assets/blanket.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 7rem;
+  margin-top: -3rem;
+  background-image: url("../../assets/blanket.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 7rem;
 
-
-
-
-    app-card {
-        max-height: 20vh;
-    }
+  app-card {
+    max-height: 20vh;
+  }
 }
 
-
-.container{
-    position: relative;
-    z-index: 900;
-    max-width: 900px;
-    margin: 0 auto;
-
-
+.container {
+  position: relative;
+  z-index: 900;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+.card-content {
+  padding: 3rem;
+  box-sizing: border-box;
 
-.card-content{
-    padding: 3rem;
-    box-sizing: border-box;
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .intro {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 2fr 1fr;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.5fr 2fr 1fr;
 }
 
 .vendors {
+  .imgs {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .vendor-label {
-        grid-column: 1 / -1;
+  a {
+    color: $color-dark-green;
+  }
+}
+
+.music {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  gap: 2rem;
+
+  a {
+    color: $color-hot-pink;
+    white-space: nowrap;
+  }
+
+  .vids {
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem;
+
+    max-height: 400px;
+    display: grid;
+
+    .horz {
+      grid-column: 1 / span 1;
+      grid-row: span 1;
     }
 
-    .tall {
-        grid-row: span 2;
+    .vert {
+      grid-row: 1 / -1;
+      grid-column: 2 / span 1;
+      max-height: 100%;
     }
+
+    video {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }

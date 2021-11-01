@@ -3,24 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
-@import './colors.scss';
+@import "./colors.scss";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-
-
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6,
-  a {
+  h6 {
     font-family: "Long Cang";
-    font-size: 1.5rem;
+  }
+
+  a {
+    font-family: "Architects Daughter", cursive;
     text-decoration: none;
     color: currentColor;
 
