@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutService } from './about.service';
 
 @Component({
   selector: 'app-about',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  constructor() {}
+  constructor(private aboutService: AboutService) {}
 
   ngOnInit(): void {}
 
@@ -21,6 +22,6 @@ export class AboutComponent implements OnInit {
   }
 
   isTurned(num: number) {
-    return num < this.page;
+    return this.aboutService.isTurned(num);
   }
 }

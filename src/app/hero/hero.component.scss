@@ -3,7 +3,7 @@
 main {
   height: 100vh;
   background-image: url("../../assets/hill.png");
-  position: relative;
+  z-index: 990;
 }
 
 .title-paper {

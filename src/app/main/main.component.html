@@ -1,1 +1,62 @@
-<app-hero></app-hero> <app-show></app-show>
+<main>
+  <img
+    class="title-paper"
+    src="../../assets/paper-label-lightgreen.png"
+    alt=""
+  />
+  <app-label class="tag">
+    <div class="content">
+      <h3>PETE Presents</h3>
+    </div>
+  </app-label>
+  <app-label class="title">
+    <div class="content">
+      <h1>FRONTERIZA</h1>
+    </div>
+  </app-label>
+  <app-label class="subtitle">
+    <div class="content">
+      <h3>cada familia tiene un mito</h3>
+    </div>
+  </app-label>
+
+  <div class="links">
+    <div class="cta watch">
+      <app-label>
+        <div class="watch-contents">
+          <a
+            href="https://app.arts-people.com/index.php?ticketing=pete"
+            target="blank"
+            >Get Tickets <span>➤</span>
+          </a>
+          <a href="/watch/show">Watch Performance <span>➤</span></a>
+        </div>
+      </app-label>
+    </div>
+    <div class="cta podcast">
+      <app-label>
+        <a href="/listen/podcast">Listen to Podcast <span>➤</span></a>
+      </app-label>
+    </div>
+    <div class="cta album">
+      <app-label>
+        <a href="/listen/album">Listen to Concept Album <span>➤</span></a>
+      </app-label>
+    </div>
+    <div class="cta festival">
+      <app-label>
+        <a href="/festival">Explore the Festival <span>➤</span></a>
+      </app-label>
+    </div>
+  </div>
+</main>
+<app-border></app-border>
+<div class="spacer" id="about">
+  <div class="prev half" (click)="prev()"></div>
+  <div class="next half" (click)="next()"></div>
+</div>
+<div class="show">
+  <div class="content">
+    <app-about></app-about>
+  </div>
+</div>

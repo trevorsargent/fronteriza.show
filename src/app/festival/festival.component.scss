@@ -15,10 +15,17 @@
 }
 
 .background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
   margin-top: -3rem;
   background-image: url("../../assets/blanket.png");
   background-size: 100%;
-  background-repeat: no-repeat;
   padding: 7rem;
 
   app-card {

@@ -1,0 +1,35 @@
+.credits {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+
+  padding: 5rem 25%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  overflow: scroll;
+}
+
+p {
+  margin-bottom: 0.2rem;
+}
+
+.close {
+  position: absolute;
+
+  top: 1rem;
+  left: 1rem;
+
+  padding: 1rem 1.2rem;
+
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba(white, 0.3);
+  }
+
+  position: fixed;
+}

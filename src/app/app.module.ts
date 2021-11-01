@@ -23,6 +23,7 @@ import { ListenComponent } from './listen/listen.component';
 import { ListenPickerComponent } from './listen/listen-picker/listen-picker.component';
 import { FestivalComponent } from './festival/festival.component';
 import { SoonComponent } from './soon/soon.component';
+import { CreditsComponent } from './credits/credits.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { SoonComponent } from './soon/soon.component';
     ListenPickerComponent,
     FestivalComponent,
     SoonComponent,
+    CreditsComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
