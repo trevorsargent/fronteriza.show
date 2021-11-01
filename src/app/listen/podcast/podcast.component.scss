@@ -132,7 +132,8 @@
 
   &.top {
     background-image: url("../../../assets/paper-label-white-1.png");
-    a {
+    a,
+    span {
       margin-right: 0.5rem;
     }
   }
@@ -143,6 +144,10 @@
 
   p {
     margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $color-red;
   }
 }
 
