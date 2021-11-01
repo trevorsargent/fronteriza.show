@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class PodcastComponent implements OnInit {
   episodes: Episode[] = [
     {
-      link: 'https://soundcloud.com/ultragonic/fronteriza-podcast-episode-1',
+      link: 'https://www.spreaker.com/user/15488677/episode-1-immigration_1',
       transcript:
         'https://docs.google.com/document/d/1hZpT0BWOiGE3kJtPVpks8PGVrHvCSLiC0Y7Zvf8t-34',
       title: 'Episode 1',
       isReleased: true,
     },
     {
-      link: 'https://soundcloud.com/ultragonic/fronteriza-podcast-episode-2',
+      link: 'https://www.spreaker.com/user/15488677/episode-2-race-and-identity',
       transcript:
         'https://docs.google.com/document/d/1Awz-DfIh5VLR-XGVsWYk9f0Ygokl1XApHblZxLQE_4Q',
       title: 'Episode 2',

@@ -17,11 +17,12 @@
   width: 30rem;
   padding: 1.5rem;
 
-  h2, h4 {
+  h2,
+  h4 {
     margin: 0 1rem;
   }
 
-  h4{
+  h4 {
     text-transform: uppercase;
   }
 }
@@ -131,6 +132,9 @@
 
   &.top {
     background-image: url("../../../assets/paper-label-white-1.png");
+    a {
+      margin-right: 0.5rem;
+    }
   }
 
   &.credits {
