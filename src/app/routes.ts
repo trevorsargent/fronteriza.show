@@ -17,7 +17,7 @@ export const routes: Routes = [
     path: 'watch',
     component: WatchComponent,
     children: [
-      { path: 'show', component: RecordingComponent },
+      // { path: 'show', component: RecordingComponent },
       { path: 'shadows', component: ShadowsComponent },
       { path: 'myth', component: MythComponent },
       { path: 'offcuts', component: OffcutsComponent },
